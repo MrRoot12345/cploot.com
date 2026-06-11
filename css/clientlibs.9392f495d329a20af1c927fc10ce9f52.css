@@ -1,0 +1,406 @@
+.atvi-locale-selector {
+  font-family: "Arial", sans-serif;
+  position: relative;
+  /***************************
+    FLAG ICONS
+    ****************************/
+}
+.atvi-locale-selector button {
+  cursor: pointer;
+}
+.atvi-locale-selector button:focus,
+.atvi-locale-selector button:active {
+  /*outline: none;
+        border: none;*/
+}
+.atvi-locale-selector.open-up .locale-panel {
+  position: absolute;
+  bottom: 50px;
+  z-index: 10;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+.atvi-locale-selector.open-down .locale-panel {
+  position: absolute;
+  top: 30px;
+  z-index: 10;
+}
+.atvi-locale-selector.open-down .cur-locale-selector-btn button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.atvi-locale-selector.open-down .cur-locale-selector-btn button .flag-arrow {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  border-color: #9c9c9c transparent transparent transparent;
+}
+.atvi-locale-selector .cur-locale-selector-btn {
+  line-height: 1px;
+  padding: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.atvi-locale-selector .cur-locale-selector-btn button {
+  background-color: transparent;
+  border: none;
+  font-size: 0;
+  top: -1px;
+}
+.atvi-locale-selector .locale-panel {
+  width: 370px;
+  background: #434343;
+  padding: 10px;
+  display: none;
+  -webkit-transform: translate(-50%, 0);
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -o-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  left: 50%;
+}
+.atvi-locale-selector .locale-panel .locale-panel-header {
+  font-size: 12px;
+  color: #FFF;
+  padding: 10px 0;
+  position: relative;
+  text-align: left;
+}
+.atvi-locale-selector .locale-panel .locale-panel-header .selected-region-text {
+  /*display: none;
+                font-size: 0;*/
+}
+.atvi-locale-selector .locale-panel .locale-panel-header .close-btn {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background: none;
+  border: none;
+  position: absolute;
+  top: -3px;
+  right: 0px;
+}
+.atvi-locale-selector .locale-panel .locale-panel-header .close-btn button {
+  background: none;
+  border: none;
+  color: #FFF;
+  font-size: 30px;
+}
+.atvi-locale-selector .locale-panel ul {
+  text-align: left;
+  display: block;
+}
+.atvi-locale-selector .locale-panel ul:after {
+  content: "";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.atvi-locale-selector .locale-panel ul li {
+  width: 47%;
+  float: left;
+}
+.atvi-locale-selector .locale-panel ul li.flag-en_za {
+  display: none;
+}
+.atvi-locale-selector .locale-panel ul li:nth-child(even) {
+  margin-right: 0;
+}
+.atvi-locale-selector .locale-panel ul li.active .region:after {
+  display: inline-block;
+  vertical-align: middle;
+  content: "";
+  background-image: url(../images/circle-check.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: relative;
+  left: 5px;
+  line-height: 0;
+  width: 13px;
+  height: 12px;
+  top: -2px;
+}
+.atvi-locale-selector .locale-panel ul li a {
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+}
+.atvi-locale-selector .locale-panel ul li a:hover {
+  color: #FFF;
+}
+.atvi-locale-selector .locale-panel ul li .region {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 13px;
+  font-size: 10px;
+}
+.atvi-locale-selector .flag-icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #abc;
+  background-image: url(../images/flags.webp);
+  width: 22px;
+  height: 12px;
+  background-size: auto 12px;
+}
+.atvi-locale-selector .flag-en .flag-icon {
+  background-position: 0px 0px;
+}
+.atvi-locale-selector .flag-en_gb .flag-icon {
+  background-position: -23px 0px;
+}
+.atvi-locale-selector .flag-en_ca .flag-icon,
+.atvi-locale-selector .flag-fr_ca .flag-icon {
+  background-position: -365px 0px;
+}
+.atvi-locale-selector .flag-en_au .flag-icon {
+  background-position: -411px 0px;
+}
+.atvi-locale-selector .flag-en_ar .flag-icon {
+  background-position: -570px 0px;
+}
+.atvi-locale-selector .flag-en_nz .flag-icon {
+  background-position: -114px 0px;
+}
+.atvi-locale-selector .flag-en_za .flag-icon {
+  background-position: -615px 0px;
+}
+.atvi-locale-selector .flag-fr .flag-icon {
+  background-position: -274px 0px;
+}
+.atvi-locale-selector .flag-fr_be .flag-icon,
+.atvi-locale-selector .flag-nl_be .flag-icon {
+  background-position: -525px 0px;
+}
+.atvi-locale-selector .flag-fr_lu .flag-icon {
+  background-position: -157px 0px;
+}
+.atvi-locale-selector .flag-es .flag-icon {
+  background-position: -320px 0px;
+}
+.atvi-locale-selector .flag-es_mx .flag-icon {
+  background-position: -183px 0px;
+}
+.atvi-locale-selector .flag-es_cl .flag-icon {
+  background-position: -662px 0px;
+}
+.atvi-locale-selector .flag-it .flag-icon {
+  background-position: -228px 0px;
+}
+.atvi-locale-selector .flag-de .flag-icon {
+  background-position: -251px 0px;
+}
+.atvi-locale-selector .flag-pt .flag-icon {
+  background-position: -434px 0px;
+}
+.atvi-locale-selector .flag-pt_br .flag-icon {
+  background-position: -388px 0px;
+}
+.atvi-locale-selector .flag-da .flag-icon {
+  background-position: -342px 0px;
+}
+.atvi-locale-selector .flag-nl .flag-icon {
+  background-position: -160px 0px;
+}
+.atvi-locale-selector .flag-nl_be .flag-icon,
+.atvi-locale-selector .flag-fr_be .flag-icon {
+  background-position: -525px 0px;
+}
+.atvi-locale-selector .flag-fi .flag-icon {
+  background-position: -297px 0px;
+}
+.atvi-locale-selector .flag-no .flag-icon {
+  background-position: -136px 0px;
+}
+.atvi-locale-selector .flag-sv .flag-icon {
+  background-position: -46px 0px;
+}
+.atvi-locale-selector .flag-pl .flag-icon {
+  background-position: -91px 0px;
+}
+.atvi-locale-selector .flag-ru .flag-icon,
+.atvi-locale-selector .flag-ru_ru .flag-icon {
+  background-position: -69px 0px;
+}
+.atvi-locale-selector .flag-ar .flag-icon,
+.atvi-locale-selector .flag-ar_sa .flag-icon {
+  background-position: -456px 0px;
+}
+.atvi-locale-selector .flag-ja .flag-icon,
+.atvi-locale-selector .flag-jp .flag-icon {
+  background-position: -205px 0px;
+}
+.atvi-locale-selector .flag-ko .flag-icon {
+  background-position: -547px 0px;
+}
+.atvi-locale-selector .flag-zh_cn .flag-icon {
+  background: none;
+}
+.atvi-locale-selector .flag-zh_tw .flag-icon {
+  background: none;
+}
+.atvi-locale-selector .flag-tr .flag-icon,
+.atvi-locale-selector .flag-tr_tr .flag-icon {
+  background-position: -593px 0px;
+}
+.atvi-locale-selector .flag-th .flag-icon {
+  background-position: -639px 0px;
+}
+.atvi-locale-selector .flag-ms .flag-icon,
+.atvi-locale-selector .flag-en_my .flag-icon {
+  background: none;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 28px;
+  background-color: #abc;
+  background-image: url(../images/flags.webp);
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-en .flag-icon {
+  background-position: 0px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-en_gb .flag-icon {
+  background-position: -55px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-en_ca .flag-icon {
+  background-position: -853px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-en_au .flag-icon {
+  background-position: -960px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-en_ar .flag-icon {
+  background-position: -1113px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-en_nz .flag-icon {
+  background-position: -267px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-en_za .flag-icon {
+  background-position: 0px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-fr .flag-icon {
+  background-position: -640px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-fr_lu .flag-icon {
+  background-position: -603px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-fr_ca .flag-icon {
+  background-position: -853px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-es .flag-icon {
+  background-position: -746px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-es_mx .flag-icon,
+.atvi-locale-selector.large .cur-locale-selector-btn.flag-mx .flag-icon {
+  background-position: -427px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-it .flag-icon {
+  background-position: -533px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-de .flag-icon {
+  background-position: -585px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-pt .flag-icon {
+  background-position: -1014px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-pt_br .flag-icon {
+  background-position: -906px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-da .flag-icon {
+  background-position: -799px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-nl .flag-icon {
+  background-position: -373px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-nl_be .flag-icon,
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-fr_be .flag-icon {
+  background-position: -1023px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-fi .flag-icon {
+  background-position: -692px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-no .flag-icon {
+  background-position: -320px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-sv .flag-icon {
+  background-position: -107px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-pl .flag-icon {
+  background-position: -213px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-ru .flag-icon,
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-ru_ru .flag-icon {
+  background-position: -160px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-ar .flag-icon,
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-ar_sa .flag-icon {
+  background-position: -1057px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-ja .flag-icon,
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-jp .flag-icon {
+  background-position: -480px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-ko .flag-icon {
+  background-position: -1278px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-zh_cn .flag-icon {
+  background: none;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-zh_tw .flag-icon {
+  background: none;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-tr .flag-icon,
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-tr_tr .flag-icon {
+  background-position: -1384px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-th .flag-icon {
+  background: -1491px 0px;
+}
+.atvi-locale-selector.large .cur-locale-selector-btn .flag-es_cl .find-column {
+  background: -1543px 0;
+}
+.atvi-locale-selector[data-selectedlocale='zh_cn'],
+.atvi-locale-selector[data-selectedlocale='zh_tw'] {
+  border: 1px solid #FFF;
+}
+.atvi-locale-selector[data-selectedlocale='zh_cn'] > p > button > span,
+.atvi-locale-selector[data-selectedlocale='zh_tw'] > p > button > span {
+  color: #FFF;
+  font-family: Arial;
+  font-size: 15px;
+  line-height: 1;
+  width: 100%;
+}
+html[lang='ar'] .atvi-locale-selector .locale-panel ul li.active .region:after {
+  left: -5px;
+}
+html[lang='tr'] .atvi-locale-selector .locale-panel ul li .region {
+  font-size: 9px;
+}
+html[lang='de'] .atvi-locale-selector .locale-panel ul li .region {
+  font-size: 8px;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

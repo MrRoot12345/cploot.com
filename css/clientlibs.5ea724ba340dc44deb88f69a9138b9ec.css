@@ -1,0 +1,2597 @@
+@font-face {
+  font-family: 'Hitmarker Text VF';
+  src: url('../fonts/HitmarkerText-VF_1.woff2') format('woff2'), url('../fonts/HitmarkerText-VF_1.woff') format('woff'), url('../fonts/HitmarkerText-VF_1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker VF';
+  src: url('../fonts/Hitmarker-VF_1.woff2') format('woff2'), url('../fonts/Hitmarker-VF_1.woff') format('woff'), url('../fonts/Hitmarker-VF_1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Text Regular';
+  src: url('../fonts/HitmarkerText-Regular_1.woff2') format('woff2'), url('../fonts/HitmarkerText-Regular_1.woff') format('woff'), url('../fonts/HitmarkerText-Regular_1.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Text Italic';
+  src: url('../fonts/HitmarkerText-Italic.woff2') format('woff2'), url('../fonts/HitmarkerText-Italic.woff') format('woff'), url('../fonts/HitmarkerText-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Text Medium';
+  src: url('../fonts/HitmarkerText-Medium.woff2') format('woff2'), url('../fonts/HitmarkerText-Medium.woff') format('woff'), url('../fonts/HitmarkerText-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Text Bold';
+  src: url('../fonts/HitmarkerText-Bold_1.woff2') format('woff2'), url('../fonts/HitmarkerText-Bold_1.woff') format('woff'), url('../fonts/HitmarkerText-Bold_1.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Condensed Regular';
+  src: url('../fonts/HitmarkerCondensed-Regular_1.woff2') format('woff2'), url('../fonts/HitmarkerCondensed-Regular_1.woff') format('woff'), url('../fonts/HitmarkerCondensed-Regular_1.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Condensed Light';
+  src: url('../fonts/HitmarkerCondensed-Light.woff2') format('woff2'), url('../fonts/HitmarkerCondensed-Light.woff') format('woff'), url('../fonts/HitmarkerCondensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Condensed Medium';
+  src: url('../fonts/HitmarkerCondensed-Medium.woff2') format('woff2'), url('../fonts/HitmarkerCondensed-Medium.woff') format('woff'), url('../fonts/HitmarkerCondensed-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Condensed Bold';
+  src: url('../fonts/HitmarkerCondensed-Bold_1.woff2') format('woff2'), url('../fonts/HitmarkerCondensed-Bold_1.woff') format('woff'), url('../fonts/HitmarkerCondensed-Bold_1.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Condensed Black';
+  src: url('../fonts/HitmarkerCondensed-Black.woff2') format('woff2'), url('../fonts/HitmarkerCondensed-Black.woff') format('woff'), url('../fonts/HitmarkerCondensed-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Normal Regular';
+  src: url('../fonts/HitmarkerNormal-Regular_1.woff2') format('woff2'), url('../fonts/HitmarkerNormal-Regular_1.woff') format('woff'), url('../fonts/HitmarkerNormal-Regular_1.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Normal Light';
+  src: url('../fonts/HitmarkerNormal-Light.woff2') format('woff2'), url('../fonts/HitmarkerNormal-Light.woff') format('woff'), url('../fonts/HitmarkerNormal-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Normal Medium';
+  src: url('../fonts/HitmarkerNormal-Medium.woff2') format('woff2'), url('../fonts/HitmarkerNormal-Medium.woff') format('woff'), url('../fonts/HitmarkerNormal-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Normal Bold';
+  src: url('../fonts/HitmarkerNormal-Bold_1.woff2') format('woff2'), url('../fonts/HitmarkerNormal-Bold_1.woff') format('woff'), url('../fonts/HitmarkerNormal-Bold_1.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Normal Black';
+  src: url('../fonts/HitmarkerNormal-Black.woff2') format('woff2'), url('../fonts/HitmarkerNormal-Black.woff') format('woff'), url('../fonts/HitmarkerNormal-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Wide Regular';
+  src: url('../fonts/HitmarkerWide-Regular.woff2') format('woff2'), url('../fonts/HitmarkerWide-Regular.woff') format('woff'), url('../fonts/HitmarkerWide-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Wide Light';
+  src: url('../fonts/HitmarkerWide-Light.woff2') format('woff2'), url('../fonts/HitmarkerWide-Light.woff') format('woff'), url('../fonts/HitmarkerWide-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Wide Medium';
+  src: url('../fonts/HitmarkerWide-Medium.woff2') format('woff2'), url('../fonts/HitmarkerWide-Medium.woff') format('woff'), url('../fonts/HitmarkerWide-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Wide Bold';
+  src: url('../fonts/HitmarkerWide-Bold.woff2') format('woff2'), url('../fonts/HitmarkerWide-Bold.woff') format('woff'), url('../fonts/HitmarkerWide-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Hitmarker Wide Black';
+  src: url('../fonts/HitmarkerWide-Black.woff2') format('woff2'), url('../fonts/HitmarkerWide-Black.woff') format('woff'), url('../fonts/HitmarkerWide-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/**
+    Call of Duty Global Site Styles
+   /apps/atvi/callofduty/global/clientlibs/clientlib-site/css/site.less
+
+**/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
+  text-rendering: optimizeLegibility;
+  font-display: swap;
+  font-family: "Hitmarker Text Regular", Arial;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+body code {
+  font-family: monospace;
+  background: #f4f5f6;
+  border-radius: 0.4rem;
+  font-size: 86%;
+  margin: 0 0.2rem;
+  padding: 0.2rem 0.5rem;
+  white-space: nowrap;
+}
+
+@keyframes ping-pulse {
+  0% {
+    box-shadow: 0 0 0 4px #393939, 0 0 0 4px rgba(255, 255, 255, 0.8);
+  }
+  20% {
+    box-shadow: 0 0 0 4px #393939, 0 0 0 6px rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 4px #393939, 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 4px #393939, 0 0 0 4px rgba(255, 255, 255, 0);
+  }
+}
+@keyframes ping-start {
+  from {
+    outline-offset: 0;
+    outline: 0 solid transparent;
+  }
+  to {
+    outline-offset: 4px;
+    outline: 2px solid #fff;
+  }
+}
+@keyframes ping-delay {
+  from {
+    outline-offset: 4px;
+    outline: 1px solid #fff;
+  }
+  to {
+    outline-offset: 4px;
+    outline: 1px solid #fff;
+  }
+}
+@keyframes ping-end {
+  from {
+    outline-offset: 4px;
+    outline: 1px solid #fff;
+  }
+  to {
+    outline-offset: 0;
+    outline: 0 solid transparent;
+  }
+}
+
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+  /*width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    overflow: visible !important; */
+}
+.slick-list:focus {
+  outline: none;
+}
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table;
+}
+.slick-track:after {
+  clear: both;
+}
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+.slick-slide img {
+  display: block;
+  width: 100%;
+}
+.slick-slide.slick-loading img {
+  display: none;
+}
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+.slick-initialized .slick-slide {
+  display: block;
+}
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+@charset "UTF-8";
+/**
+  Slider
+*/
+/*=================================
+  Previous and Next icon buttons
+==================================*/
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  display: block;
+  padding: 0;
+  height: 30px;
+  width: 30px;
+  line-height: 0;
+  font-size: 0;
+  cursor: pointer;
+  background: transparent;
+  color: transparent;
+  border: none;
+  transform: translate(0, -50%);
+}
+.slick-prev:hover .slick-prev-icon,
+.slick-next:hover .slick-prev-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:hover .slick-next-icon,
+.slick-next:hover .slick-next-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-next:focus .slick-next-icon {
+  opacity: 1;
+}
+.slick-prev:focus,
+.slick-next:focus {
+  top: calc(50% - 1px);
+}
+.slick-prev:focus .slick-prev-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-next:focus .slick-next-icon {
+  color: orange;
+  font-size: 28px;
+  margin-left: -2px;
+}
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled {
+  cursor: default;
+}
+.slick-prev.slick-disabled .slick-prev-icon,
+.slick-next.slick-disabled .slick-prev-icon,
+.slick-prev.slick-disabled .slick-next-icon,
+.slick-next.slick-disabled .slick-next-icon {
+  opacity: 0.25;
+}
+.slick-prev .slick-prev-icon,
+.slick-next .slick-prev-icon,
+.slick-prev .slick-next-icon,
+.slick-next .slick-next-icon {
+  display: block;
+  color: #000000;
+  opacity: 0.75;
+  font-size: 24px;
+  line-height: 1;
+}
+.slick-prev {
+  left: 25px;
+  z-index: 2;
+}
+[dir="rtl"] .slick-prev {
+  left: auto;
+  right: 25px;
+}
+.slick-prev .slick-prev-icon:before {
+  content: "";
+  background: url(../images/arrow-left.png) center center no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+[dir="rtl"] .slick-prev .slick-prev-icon:before {
+  content: "";
+  background: url(../images/arrow-right.png) center center no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.slick-next {
+  right: 25px;
+  z-index: 2;
+}
+[dir="rtl"] .slick-next {
+  left: 25px;
+  right: auto;
+}
+.slick-next .slick-next-icon:before {
+  content: "";
+  background: url(../images/arrow-right.png) center center no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+[dir="rtl"] .slick-next .slick-next-icon:before {
+  content: "";
+  background: url(../images/arrow-left.png) center center no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*==========================
+  Slide navigation dots
+===========================*/
+.slick-slider {
+  margin-bottom: 30px;
+}
+.slick-slider.slick-dotted {
+  margin-bottom: 60px;
+}
+.dots-inside .slick-dots {
+  bottom: 30px;
+}
+.slick-dots {
+  position: absolute;
+  bottom: -30px;
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  padding: 0;
+}
+.slick-dots li button {
+  display: block;
+  height: 20px;
+  width: 20px;
+  margin-top: -4px;
+  margin-left: -4px;
+  line-height: 0px;
+  font-size: 0px;
+  color: transparent;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+.slick-dots li button:hover .slick-dot-icon,
+.slick-dots li button:focus .slick-dot-icon {
+  opacity: 1;
+}
+.slick-dots li button:focus .slick-dot-icon:before {
+  color: orange;
+}
+.slick-dots li button .slick-dot-icon {
+  color: #000000;
+  opacity: 0.25;
+}
+.slick-dots li button .slick-dot-icon:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "\2022";
+  font-size: 45px;
+  line-height: 1;
+  text-align: center;
+  transition: all .05s linear;
+}
+.slick-dots li.slick-active button:focus .slick-dot-icon {
+  color: orange;
+  opacity: 1;
+}
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: #000000;
+  opacity: 1;
+}
+.slick-dots li.slick-active button .slick-dot-icon:before {
+  margin-top: -3px;
+  margin-left: -2px;
+  font-size: 51px;
+}
+/**
+ Improved .sr-only class by ffoodd: https://gist.github.com/ffoodd/000b59f431e3e64e4ce1a24d5bb36034
+ */
+.slick-sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 1px !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+/*===========================
+  Pause/play icon button
+============================*/
+.slick-autoplay-toggle-button {
+  position: absolute;
+  left: 5px;
+  bottom: -32px;
+  z-index: 10;
+  opacity: 0.75;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  color: #000000;
+}
+.slick-autoplay-toggle-button:hover,
+.slick-autoplay-toggle-button:focus {
+  opacity: 1;
+}
+.slick-autoplay-toggle-button:focus {
+  color: orange;
+}
+.slick-autoplay-toggle-button .slick-pause-icon:before {
+  content: "\23f8";
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+}
+.slick-autoplay-toggle-button .slick-play-icon:before {
+  content: "\25b6";
+  width: 20px;
+  height: 20px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+}
+
+/**
+	COD BO6 CORE FONTS - /apps/atvi/callofduty/bo6/core/clientlibs/css/fonts.less
+*/
+
+/**
+	COD BO6 CORE STYLES - /apps/atvi/callofduty/bo6/core/clientlibs/css/core.less
+*/
+html,
+body {
+  height: auto !important;
+}
+body {
+  background-color: #000;
+}
+body #cod-single-header .cod-header_cta a {
+  color: #FFF !important;
+}
+body .al-container > * {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 60px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+@media (max-width: 1024px) {
+  body .al-container > * {
+    max-width: 1024px;
+    padding-inline: 40px;
+  }
+}
+@media (max-width: 600px) {
+  body .al-container > * {
+    max-width: 600px;
+    padding-inline: 16px;
+  }
+}
+body .xf-container .experience-fragment-container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 60px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+@media (max-width: 1024px) {
+  body .xf-container .experience-fragment-container {
+    max-width: 1024px;
+    padding-inline: 40px;
+  }
+}
+@media (max-width: 600px) {
+  body .xf-container .experience-fragment-container {
+    max-width: 600px;
+    padding-inline: 16px;
+  }
+}
+body .atvi-agegate h2 {
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  body .atvi-agegate h2 {
+    font-family: "Hitmarker Condensed Black", Arial;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+  }
+}
+body .atvi-agegate .submit-wrapper a {
+  font-family: "Hitmarker Text Bold";
+  font-weight: 700;
+  font-style: normal;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 2px;
+  line-height: 1;
+  padding: 0;
+  background: #f96800;
+  color: #ffffff;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  letter-spacing: .8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 250px;
+  margin: 0 auto;
+}
+body .atvi-age-gate-container .age-gate-title {
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 2.25rem;
+  line-height: 2.25rem;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+@media (max-width: 600px) {
+  body .atvi-age-gate-container .age-gate-title {
+    font-family: "Hitmarker Condensed Black", Arial;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+  }
+}
+body .atvi-age-gate-container form button {
+  font-family: "Hitmarker Text Bold";
+  font-weight: 700;
+  font-style: normal;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 2px;
+  line-height: 1;
+  padding: 0;
+  background: #f96800;
+  color: #ffffff;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  letter-spacing: .8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 250px;
+  margin: 0 auto;
+}
+body #bo6-cards-container.promo-active {
+  margin-top: 30px;
+}
+body .page-disclaimers {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 60px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+@media (max-width: 1024px) {
+  body .page-disclaimers {
+    max-width: 1024px;
+    padding-inline: 40px;
+  }
+}
+@media (max-width: 600px) {
+  body .page-disclaimers {
+    max-width: 600px;
+    padding-inline: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  body .page-disclaimers {
+    padding-top: 40px;
+  }
+}
+@media (max-width: 600px) {
+  body .page-disclaimers {
+    padding-bottom: 0px;
+  }
+}
+body .page-disclaimers p {
+  font-family: "Hitmarker Text Regular", Arial;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 0.63rem;
+  line-height: 1.13rem;
+  color: #BBB;
+  margin-bottom: 20px;
+}
+body .page-disclaimers p:last-child {
+  margin-bottom: 0;
+}
+body .page-disclaimers p sup {
+  vertical-align: super;
+  font-size: .5em;
+  line-height: 1;
+}
+body footer {
+  padding-top: 40px !important;
+}
+@media (max-width: 1024px) {
+  body footer {
+    padding-top: 16px;
+  }
+}
+@media (max-width: 600px) {
+  body footer {
+    padding-top: 0;
+  }
+}
+#ve-play-now-modal .cod-play-now-card_back .cod-play-now-card_bundle-name {
+  display: none;
+}
+#ve-play-now-modal .cod-play-now-card_back .cod-play-now-card_bundle-name p {
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 1.75rem;
+  line-height: 1.75rem;
+  text-transform: uppercase;
+  color: #f96800;
+}
+@media screen and (max-height: 500px) {
+  #ve-play-now-modal .cod-play-now-card_back .cod-play-now-card_bundle-name p {
+    font-family: "Hitmarker Condensed Black", Arial;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    text-transform: uppercase;
+  }
+}
+#ve-play-now-modal .cod-play-now-card-modal-close-btn {
+  opacity: .3;
+  transition: .25s all;
+}
+#ve-play-now-modal .cod-play-now-card-modal-close-btn:hover {
+  opacity: 1;
+}
+@media (max-width: 600px) {
+  #ve-play-now-modal .cod-play-now-card-modal-close-btn {
+    top: 15px;
+    right: 15px;
+  }
+}
+#ve-play-now-modal .cod-play-now-card_back .cod-play-now-card_back-section.cod-play-now-card_back-section-1 {
+  padding-top: 0;
+}
+#ve-play-now-modal .cod-play-now-card_back-section-1-header {
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  padding: 12px 0;
+  border-top: 1px solid #606971;
+}
+#ve-play-now-modal .cod-play-now-card_back-section-1-header[aria-expanded='false'] {
+  padding-bottom: 0;
+}
+#ve-play-now-modal .cod-play-now-card_back-section-1-header[aria-expanded='false']:after {
+  top: 72%;
+}
+#ve-play-now-modal .cod-play-now-card_back-section-1-subheader {
+  padding: 12px 0;
+}
+#ve-play-now-modal .cod-play-now-card_back-section-2-header {
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  line-height: 1rem;
+  text-transform: uppercase;
+  padding: 12px 0;
+}
+#ve-play-now-modal .cod-play-now-card_back-section-2-subheader {
+  padding: 0 0 12px;
+}
+#ve-play-now-modal .cod-play-now-card_back-section-3 {
+  padding: 0 15px 15px;
+}
+#ve-play-now-modal .cod-play-now-card_back-section-2 {
+  padding-bottom: 12px;
+  padding-top: 12px;
+}
+@media screen and (max-height: 520px) {
+  #ve-play-now-modal .cod-play-now-card-inner-container {
+    height: 80vh;
+    overflow: auto;
+    background: black;
+  }
+}
+@media (max-width: 600px) {
+  #ve-play-now-modal .cod-play-now-card-inner-container {
+    margin-inline: 16px !important;
+  }
+}
+@media (max-width: 600px) {
+  #cod-single-header .cod-header_cta a .cod-header_cta-desktop {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  #cod-single-header .cod-header_cta a .cod-header_cta-mobile {
+    display: block !important;
+  }
+}
+
+/**
+	COD BO6 PLAY NOW CARD STYLES - /apps/atvi/callofduty/bo6/components/pages/common/css/play-now-cards.less
+*/
+/**
+
+MODULE CONTAINER STYLES
+
+**/
+.bo6-subpage-playnow {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 60px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+@media (max-width: 1024px) {
+  .bo6-subpage-playnow {
+    max-width: 1024px;
+    padding-inline: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .bo6-subpage-playnow {
+    max-width: 600px;
+    padding-inline: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .bo6-subpage-playnow {
+    display: grid;
+    grid-gap: 28px;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .bo6-subpage-playnow {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.bo6-subpage-playnow > * {
+  grid-column: 3 / span 8;
+}
+@media (max-width: 1024px) {
+  .bo6-subpage-playnow > * {
+    grid-column: 1 / span 12;
+  }
+}
+@media (max-width: 600px) {
+  .bo6-subpage-playnow > * {
+    grid-column: 1 / span 4;
+  }
+}
+.bo6-subpage-playnow .section-header {
+  position: relative;
+  display: flex;
+  height: 100%;
+  gap: 12px;
+}
+@media (min-width: 1024.02px) {
+  .bo6-subpage-playnow .section-header {
+    margin: 0 auto 40px;
+    width: 100%;
+    max-width: 878px;
+  }
+}
+.bo6-subpage-playnow .section-header h2 {
+  text-align: center;
+  color: #FFF;
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+  max-width: 75%;
+  background-image: url(../images/TitleTextures_White.webp);
+}
+@media (min-width: 600.02px) {
+  .bo6-subpage-playnow .section-header h2 {
+    font-family: "Hitmarker Condensed Black", Arial;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 4.25rem;
+    line-height: 4.25rem;
+    text-transform: uppercase;
+    line-height: .8;
+  }
+}
+@media (max-width: 600px) {
+  .bo6-subpage-playnow .section-header h2 {
+    font-family: "Hitmarker Condensed Black", Arial;
+    font-weight: 900;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 2.25rem;
+    line-height: 2.25rem;
+    text-transform: uppercase;
+    line-height: .8;
+  }
+}
+.bo6-subpage-playnow .section-header:before {
+  content: "";
+  position: relative;
+  display: block;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: url(../images/pre-order-texture-left.png) center center no-repeat;
+  background-size: cover;
+  flex-grow: 1;
+}
+@media (max-width: 600px) {
+  .bo6-subpage-playnow .section-header:before {
+    display: none;
+  }
+}
+@media (min-width: 1024.02px) {
+  .bo6-subpage-playnow .section-header:before {
+    height: 57px;
+  }
+}
+.bo6-subpage-playnow .section-header:after {
+  content: "";
+  position: relative;
+  display: block;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background: url(../images/pre-order-texture-right.png) center center no-repeat;
+  background-size: cover;
+  flex-grow: 1;
+}
+@media (min-width: 1024.02px) {
+  .bo6-subpage-playnow .section-header:after {
+    height: 57px;
+  }
+}
+.bo6-subpage-playnow #bo6-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+}
+.bo6-subpage-playnow #bo6-cards-container > * {
+  width: 100%;
+  background: #000;
+}
+@media (min-width: 1024.02px) {
+  .bo6-subpage-playnow #bo6-cards-container > * {
+    max-width: 420px;
+  }
+}
+.bo6-subpage-playnow #bo6-cards-container .slick-next,
+.bo6-subpage-playnow #bo6-cards-container .slick-prev {
+  width: 28px;
+  height: 50px;
+  rotate: 0deg;
+  border: none;
+  background: #f96800;
+}
+.bo6-subpage-playnow #bo6-cards-container .slick-next.slick-disabled,
+.bo6-subpage-playnow #bo6-cards-container .slick-prev.slick-disabled {
+  background: #2e2e2e;
+  cursor: default;
+  display: none !important;
+}
+.bo6-subpage-playnow #bo6-cards-container .slick-next {
+  right: -16px;
+}
+.bo6-subpage-playnow #bo6-cards-container .slick-next.slick-disabled .slick-next-icon {
+  opacity: 0.25;
+}
+.bo6-subpage-playnow #bo6-cards-container .slick-next .slick-next-icon:before {
+  background: none;
+  border-top: 3px solid #FFF;
+  border-right: 3px solid #FFF;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  right: 8px;
+  bottom: auto;
+  left: auto;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.bo6-subpage-playnow #bo6-cards-container .slick-prev {
+  left: -16px;
+}
+.bo6-subpage-playnow #bo6-cards-container .slick-prev.slick-disabled .slick-prev-icon {
+  opacity: 0.25;
+}
+.bo6-subpage-playnow #bo6-cards-container .slick-prev .slick-prev-icon:before {
+  background: none;
+  border-top: 3px solid #FFF;
+  border-left: 3px solid #FFF;
+  width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 16px;
+  right: auto;
+  bottom: auto;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.bo6-subpage-playnow #bo6-cards-container .slick-dots li {
+  margin: 0 10px;
+}
+.bo6-subpage-playnow #bo6-cards-container .slick-dots li.slick-active {
+  background: #f96800;
+}
+.bo6-subpage-playnow #bo6-cards-container .slick-dots li.slick-active button {
+  background: #f96800;
+}
+.bo6-subpage-playnow #bo6-cards-container .slick-dots li button {
+  background: #666;
+  height: 3px;
+  width: 60px;
+}
+.bo6-subpage-playnow #bo6-cards-container .slick-dots li button span.slick-dot-icon {
+  display: none;
+}
+.bo6-subpage-playnow .game-pass-banner {
+  margin-bottom: 0;
+}
+/**
+
+XBOX GAME PASS BANNER
+
+**/
+/*.play-now-game-pass-banner {
+
+	width: 100%;
+    max-width: 880px;
+    background: linear-gradient(0deg, #1B1B1B -0.06%, #3C4147 99.94%);
+    margin: 40px auto 80px;
+    display: none;
+
+    .media-breakpoint-down(tablet, {
+		margin: 13px auto 80px;
+    });
+
+    .media-breakpoint-down(mobile, {
+		margin: 20px auto 60px;
+    });
+
+    .atvi-card-content {
+		display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        padding: 20px;
+
+        .atvi-card-logo {
+
+            max-width: 215px;
+
+			img {
+				display: block;
+                filter: brightness(0) invert(1);
+				width: 100%;
+            }
+
+        }
+
+        .atvi-card-text {
+
+            max-width: 410px;
+
+			p {
+				.body-md();
+                color: #FFF;
+                text-align: center;
+
+                sup {
+					vertical-align: super;
+                    line-height: 0;
+                    font-size: .5em;
+                }
+            }
+
+        }
+
+        .atvi-card-ctas {
+
+			a {
+				color: #FFF;
+                text-decoration: none;
+                .body-sm();
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+                border-radius: 2px;
+                background: #107C10;
+                padding: 12px 24px;
+                display: block;
+                width: fit-content;
+    
+                .media-breakpoint-down(mobile, {
+                    margin: 0 auto;
+                });
+            }
+
+        }
+
+        .media-breakpoint-down(mobile, {
+            padding: 16px 40px;
+            margin: 20px auto;
+            gap: 12px;
+            flex-direction: column;
+            justify-content: center;
+    	});
+    }
+
+}*/
+/*.game-pass-banner {
+
+	width: 100%;
+    background: linear-gradient(180deg, #054B16 0%, #107C10 51.5%);
+    margin: 40px auto 40px;
+    position: relative;
+    display: none;
+
+    .media-breakpoint-down(tablet, {
+		margin: 0px auto 80px;
+    });
+
+    .media-breakpoint-down(mobile, {
+		margin: 0px auto 60px;
+    });
+
+    .atvi-card-inner-container {
+
+		.container-responsive(true);
+        .generate-grid(desktop, @gtc-12);
+
+        .media-breakpoint-down(tablet, {
+            .generate-grid(tablet, @gtc-12);
+        });
+
+        .media-breakpoint-down(mobile, {
+            .generate-grid(mobile, @gtc-4);
+        });
+
+        .atvi-card-content-container {
+			grid-column: 2 / span 10;
+
+			.media-breakpoint-down(tablet, {
+                grid-column: 1 / span 12;
+            });
+
+            .media-breakpoint-down(mobile, {
+                grid-column: 1 / span 4;
+            });
+        }
+    }
+
+    .atvi-card-media-container {
+		display: none;
+    }
+
+    .atvi-card-content {
+		display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        padding: 20px 0;
+
+        .atvi-card-logo {
+
+            max-width: 215px;
+
+			img {
+				display: block;
+                filter: brightness(0) invert(1);
+				width: 100%;
+            }
+
+        }
+
+        .atvi-card-text {
+
+            max-width: 500px;
+
+			p {
+				.body-md();
+                color: #FFF;
+                text-align: center;
+
+                sup {
+					vertical-align: super;
+                    line-height: 0;
+                    font-size: .5em;
+                }
+            }
+
+        }
+
+        .atvi-card-ctas {
+
+			a {
+				display: block;
+                .body-sm();
+                color: #000;
+                font-weight: bold;
+                text-transform: uppercase;
+                width: fit-content;
+                padding: 12px 24px;
+                border-radius: 2px;
+                background: #9BF00B;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.20);
+                text-align: center;
+            }
+
+        }
+
+        .media-breakpoint-down(mobile, {
+            padding: 16px 20px;
+            margin: 0px auto;
+            gap: 12px;
+            flex-direction: column;
+            justify-content: center;
+    	});
+    }
+
+}*/
+body#bo6-home .full-banner .game-pass-banner,
+body#xbox .game-pass-banner,
+body#bo6-play-now .game-pass-banner {
+  display: block;
+}
+body#xbox .game-pass-banner,
+body#bo6-play-now .game-pass-banner {
+  max-width: 880px;
+}
+body#xbox .game-pass-banner .atvi-card-inner-container,
+body#bo6-play-now .game-pass-banner .atvi-card-inner-container {
+  display: block;
+  padding-inline: 0;
+}
+body#xbox .game-pass-banner .atvi-card-inner-container .atvi-card-content-container .atvi-card-logo,
+body#bo6-play-now .game-pass-banner .atvi-card-inner-container .atvi-card-content-container .atvi-card-logo {
+  max-width: 172px;
+}
+@media (min-width: 600.02px) {
+  body#xbox .game-pass-banner .atvi-card-inner-container .atvi-card-content-container .atvi-card-text,
+  body#bo6-play-now .game-pass-banner .atvi-card-inner-container .atvi-card-content-container .atvi-card-text {
+    max-width: 390px;
+  }
+}
+body#xbox .game-pass-banner {
+  background: linear-gradient(0deg, #1b1b1b -0.06%, #3c4147 99.94%);
+}
+body#xbox .game-pass-banner .atvi-card-content .atvi-card-ctas a {
+  background: #107C10;
+  color: #FFF;
+}
+/**
+
+DISCLAIMERS
+
+**/
+#bo6-play-now-disclaimers {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 60px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  margin-top: 40px;
+  display: none !important;
+  font-family: "Hitmarker Text Regular", Arial;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 0.63rem;
+  line-height: 1.13rem;
+  color: #BBB;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 1024px) {
+  #bo6-play-now-disclaimers {
+    max-width: 1024px;
+    padding-inline: 40px;
+  }
+}
+@media (max-width: 600px) {
+  #bo6-play-now-disclaimers {
+    max-width: 600px;
+    padding-inline: 16px;
+  }
+}
+@media (max-width: 600px) {
+  #bo6-play-now-disclaimers {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+#bo6-play-now-disclaimers > * {
+  grid-column: 1 / span 12;
+}
+@media (max-width: 600px) {
+  #bo6-play-now-disclaimers > * {
+    grid-column: 1 / span 4;
+  }
+}
+#bo6-play-now-disclaimers p {
+  margin-bottom: 20px;
+}
+#bo6-play-now-disclaimers p:last-of-type {
+  margin-bottom: 0;
+}
+#bo6-play-now-disclaimers p sup {
+  vertical-align: super;
+  font-size: .5em;
+  line-height: 1;
+}
+#bo6-play-now-disclaimers #bo6-play-now-promo-disclaimer {
+  display: none;
+}
+/**
+
+PLAY NOW PAGE
+
+**/
+body#bo6-play-now #bo6-play-now-disclaimers {
+  display: block !important;
+}
+body#bo6-play-now #bo6-play-now-disclaimers p:nth-child(3),
+body#bo6-play-now #bo6-play-now-disclaimers p:nth-child(4),
+body#bo6-play-now #bo6-play-now-disclaimers p:nth-child(5) {
+  display: none;
+}
+body#bo6-play-now #bo6-play-now-disclaimers p:nth-child(6) {
+  display: none;
+}
+body#bo6-play-now #bo6-play-now-disclaimers p:nth-child(7) {
+  display: block;
+}
+body#bo6-play-now #bo6-playnow-hero .atvi-card-inner-container {
+  aspect-ratio: unset;
+  max-width: 1280px;
+  height: 530px;
+  margin: 0 auto;
+}
+body#bo6-play-now .bo6-subpage-playnow > .atvi-text {
+  display: none;
+}
+body#bo6-play-now .bo6-subpage-playnow #mobile-close {
+  display: none;
+}
+body#bo6-play-now #bo6-play-now-hero-logo-container {
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto 25px;
+}
+body#bo6-play-now #bo6-play-now-hero-logo-container img {
+  width: 100%;
+}
+body#bo6-play-now #bo6-play-now-hero-title {
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  color: #000;
+  background: url(../images/TitleTextures_White.webp) center center no-repeat;
+  background-size: cover;
+  padding: 6px 20px;
+  width: fit-content;
+  margin: 0 auto;
+}
+body#bo6-play-now .atvi-card-content-container {
+  margin: 0 auto;
+}
+body#bo6-play-now #bo6-bundles-container {
+  margin-top: -160px;
+}
+@media screen and (max-height: 450px) and (min-width: 769px) {
+  body#bo6-play-now header {
+    display: none;
+  }
+  body#bo6-play-now #bo6-playnow-hero {
+    translate: -29% 0;
+  }
+  body#bo6-play-now #bo6-play-now-hero-title {
+    font-family: "Hitmarker Condensed Black", Arial;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  body#bo6-play-now .bo6-subpage-playnow > * {
+    grid-column: 1 / span 12;
+    position: absolute;
+    top: 20px;
+    width: calc(100vw - 40%);
+    min-width: 600px;
+    max-width: 650px;
+    right: 15px;
+  }
+  body#bo6-play-now .bo6-subpage-playnow > .atvi-text {
+    display: block;
+  }
+  body#bo6-play-now .bo6-subpage-playnow > .atvi-text .section-header {
+    display: none;
+  }
+  body#bo6-play-now .bo6-subpage-playnow > .atvi-experiencefragment {
+    top: 60px;
+  }
+  body#bo6-play-now .bo6-subpage-playnow > .atvi-layout-container {
+    position: relative;
+    width: 100%;
+    max-width: unset;
+    right: auto;
+  }
+  body#bo6-play-now .bo6-subpage-playnow #mobile-close {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background: none;
+    border: none;
+    font-family: "Hitmarker Text Regular", Arial;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-size: 0.88rem;
+    line-height: 1.38rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFF;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    translate: 0 -50%;
+    text-decoration: none;
+  }
+  body#bo6-play-now .bo6-subpage-playnow #mobile-close span:last-of-type {
+    font-size: 38px;
+    font-weight: 400;
+  }
+  body#bo6-play-now #bo6-playnow-hero .atvi-card-content-container {
+    margin: 0 auto;
+    width: 20vw;
+  }
+  body#bo6-play-now #bo6-bundles-container {
+    margin-top: 0;
+  }
+  body#bo6-play-now #bo6-play-now-disclaimers {
+    margin-top: 75px;
+  }
+  body#bo6-play-now #bo6-cards-container {
+    gap: 20px;
+    /*
+            .cod-pn-bundle-container {
+
+                .bundle-name {
+                    width: ~"calc(100% - 32px)";
+                }
+
+                &:hover {
+					box-shadow: unset;
+                }
+
+                .bundle-img {
+					height: 120px;
+                    width: 100%;
+                }
+
+				.bundle-platforms {
+					padding: 8px 0;
+                    margin: 0 12px;
+
+                    li.break {
+                        flex-basis: 100%;
+                        height: 0; 
+                        padding: 0;
+                        margin: 0;
+                        border: none;
+                    }
+                }
+
+                .bundle-description {
+					padding: 8px 12px 0;
+
+                    li {
+						.body-xs();
+                        margin-bottom: 4px;
+
+                        &:before {
+							top: 8px;
+                        }
+
+                        &:after {
+							top: 5px;
+                        }
+
+                    }
+                }
+
+                .bundle-select button {
+					margin-top: 8px !important;
+                }
+
+                &[data-bundle-id='vault'] {
+
+                    //FRONT CARD
+                    .bundle-name p {
+						.heading-custom(14px, 14px, 1px);
+                    }
+
+                    //BACK CARD
+                    .platform-info {
+    
+                        .platform-select-bundle-name p {
+                            .heading-custom(14px, 14px, 1px);
+                        }
+    
+                    }
+
+                } //vault
+
+                &[data-bundle-id='xgen-standard'] {
+
+					.bundle-name p {
+						.body-custom(12px, 12px, 1px);
+
+                    }
+
+                    //BACK CARD
+                    .platform-info {
+    
+                        .platform-select-bundle-name p {
+                            .body-custom(12px, 12px, 1px);
+                        }
+
+                    }
+
+                    .custom-footer-link {
+
+                        li {
+							width: 47%;
+                        }
+
+                        a {
+
+                            padding-left: 8px;
+                            
+                            .custom-main-cta-label{
+
+								width: 89px;
+
+                            }
+
+                        }
+
+                    }
+
+                } //xgen-standard
+
+                //BACK CARD
+                .platform-info {
+
+                    .close-platform {
+						font-size: 20px;
+                    }
+
+                    .platform-select-bundle-name {
+						margin-bottom: 8px;
+                    }
+
+					.platform-select-choose-platform p {
+						//.body-custom(10px, 16px, 1px);
+                    }
+
+                    .platform-console-links-list {
+						flex-wrap: wrap;
+                        flex-direction: row;
+
+                        li {
+							width: 47%;
+
+                            a {
+								padding: 8px;
+                            }
+                        }
+                    }
+
+                    .platform-select-links a {
+
+                        padding: 8px;
+
+                        .icon {
+							.square(20px);
+                        }
+
+                        .console-title .console-details {
+                            .console-type, .console-tag {
+								line-height: 12px;
+                                font-size: 10px;
+                            }
+
+                            .console-type {
+								margin-bottom: 2px;
+                            }
+
+                        }
+                    }
+
+                    .custom-footer-link {
+
+                        .custom-description p {
+        					.body-custom(10px, 16px, 1px);
+                        }
+
+                        a {
+
+                            span {
+                            	line-height: 1;
+                            }
+
+                            .icon {
+								.square(20px);
+                            }
+
+                            .console-type {
+								font-size: 10px;
+                            }
+
+                            .custom-main-cta-label {
+								margin-bottom: 2px;
+                            }
+
+							&:before {
+								.square(24px);
+                                left: 8px;
+                            }
+
+                        }
+
+                    } //custom footer link
+
+                } //platform info
+
+            } //cod-pn-bundle-container */
+  }
+  body#bo6-play-now #bo6-cards-container .cod-play-now-card .cod-play-now-card_bundle-name p {
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+@media screen and (max-height: 450px) and (max-width: 1024px) and (min-width: 769px) {
+  body#bo6-play-now #bo6-playnow-hero {
+    translate: -31% 0;
+  }
+}
+@media screen and (max-height: 450px) and (max-width: 950px) and (min-width: 769px) {
+  body#bo6-play-now #bo6-playnow-hero {
+    translate: -36% 0;
+  }
+}
+@media screen and (max-height: 450px) and (max-width: 850px) and (min-width: 769px) {
+  body#bo6-play-now #bo6-playnow-hero {
+    translate: -38% 0;
+  }
+}
+@media screen and (max-height: 450px) and (max-width: 810px) and (min-width: 769px) {
+  body#bo6-play-now #bo6-playnow-hero {
+    translate: -40% 0;
+  }
+}
+/**
+
+INDIVIDUAL CARD STYLES
+
+**/
+#bo6-cards-container {
+  /*.cod-pn-bundle-container {
+
+        &:hover {
+            box-shadow: 0px 0px 20px 5px rgba(249, 104, 0, 0.7); //Orange glow on hover
+
+            .bundle-info {
+                .bundle-img img, .bundle-img video {
+                    scale: 1.05;
+                }
+            }
+        }
+    
+        @media screen and (max-width: 600px) {
+            
+            &:hover {
+                box-shadow: unset;
+            }
+        }
+    
+        //FRONT CARD
+        .bundle-info {
+    
+            //Bundle name
+            .bundle-name {
+                
+                margin: 12px 16px;
+                position: absolute;
+                top: 0;
+                width: ~"calc(100% - 32px)";
+                z-index: 3;
+                
+                span.platform-title {
+                    display: none; //Hide consoles tag in edition title section
+                }
+            }
+            
+            //Bundle image
+            .bundle-img {
+                
+                position: relative;
+                overflow: hidden;
+                aspect-ratio: 16/9;
+                
+                img, video {
+                    scale: 1;
+                    transition: .25s all;
+                }
+                
+                //Top gradienteffect on top of image
+                &:after {
+                    content: "";
+                    background: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 52.73%, rgba(0, 0, 0, 0.80) 100.14%);
+                    .fill-parent();
+                }
+            }
+            
+            //Bundle platforms
+            .bundle-platforms {
+                
+                ul {
+                    gap: 4px;
+                }
+
+                li {
+					font-size: .5rem;
+                    line-height: 1;
+                }
+                
+            }
+            
+            //Orange bullet points
+            .bundle-description {
+                
+                padding: 12px 16px 0;
+                
+                li {
+                    
+                    position: relative;
+                    margin-bottom: 8px;
+                    
+                    //Diamond
+                    &:before {
+                        content: "";
+                        width: 3px;
+                        height: 3px;
+                        background: @orange;
+                        position: absolute;
+                        left: 3px;
+                        top: 10px;
+                        transform: rotate(45deg);
+                    }
+                    
+                    //Diamond outline
+                    &:after {
+                        content: "";
+                        width: 9px;
+                        height: 9px;
+                        border: 1px solid @orange;
+                        position: absolute;
+                        left: 0;
+                        top: 7px;
+                        transform: rotate(45deg);
+                    }
+
+                }
+                
+            }
+            
+            //Full size select button
+            .bundle-select {
+                max-width: unset;
+                margin: 12px auto 20px !important;
+                width: 100%;
+                padding: 0 15px;
+            }
+    
+        }
+
+        //BACK CARD
+        .platform-info {
+    
+            z-index: 5;
+            padding: 12px 16px;
+    
+            //Close Button
+            button.close-platform {
+                color: #000;
+                background: none;
+                font-size: 29px;
+                width: auto;
+                line-height: 1;
+                height: auto;
+                right: 20px;
+            }
+
+            //Accordion header
+            .platform-retail-links-header {
+                position: relative;
+                cursor: pointer;
+                color: #FFF;
+                padding: 2px 0;
+            }
+    
+            //Accordion sub header
+            .platform-select-choose-platform, .custom-description p {
+                text-transform: none;
+                .body-xs();
+                border-top: none;
+                border-bottom: none;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding: 0;
+                margin-bottom: 15px;
+                font-size: 0.90rem;
+                line-height: 1.30rem;
+            }
+    
+            //Retail Links
+            ul.platform-console-links-list {
+    
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 12px;
+    
+                //Stack console links in tablet mode
+                @media screen and (max-width: 900px) and (min-width: 600px) {
+                    flex-wrap: unset;
+                    flex-direction: column;
+                }
+    
+                li {
+                    width: ~"calc((100% / 2) - 6px)";
+                    margin: 0;
+    
+                    //Console links are full width on tablet
+                    @media screen and (max-width: 900px) and (min-width: 600px) {
+                        width: 100%;
+                    }
+                }
+    
+                a {
+                    padding: 8px 12px;
+    
+                    //Hide arrow
+                    &:after {
+                        display: none;
+                    }
+    
+                    .console-title {
+                        flex-wrap: unset;
+                        width: 100%;
+    
+                        .console-details .console-type {
+                            .body-xs();
+                            font-weight: 700;
+                        }
+                    }
+                }
+    
+            }
+        }
+    
+        //VAULT CARD
+        &#bo6-vault-card {
+
+            border: 1px solid @orange;
+
+            //Orange edition name
+            .bundle-name, .platform-select-bundle-name {
+                background: url(../images/VE_SkuBar_Orange.webp) center center no-repeat;
+                background-size: 100% 100%;
+                padding: 6px 24px;
+                text-align: center;
+                padding-right: 0;
+                padding-left: 0;
+                margin-bottom: 15px;
+
+                p {
+					color: #000;
+                }
+            }
+
+            //Orange Select Button
+            .bundle-select button {
+                .bo6-button();
+            }
+    
+        }
+    
+        //XGEN CARD
+        &#bo6-xgen-card {
+
+            border: 1px solid #79838d;
+
+            //Gray edition name
+            .bundle-name, .platform-select-bundle-name {
+                background: url(../images/VE_SkuBar_Gray.webp) center center no-repeat;
+                background-size: 100% 100%;
+                padding: 6px 24px;
+            }
+
+            .bundle-name p, .platform-select-bundle-name {
+				.body-xl();
+                line-height: 1;
+                text-align: center;
+            }
+
+            //Orange Outline Select Button
+            .bundle-select button {
+                .bo6-outline-button();
+            }
+
+
+            //Strike throughs on bullet entries
+            .bundle-description li:nth-child(n+2) {
+                text-decoration: line-through;
+                color: #666;
+                
+                &:before {
+                    content: "";
+                    background: #666;
+                }
+                
+                &:after {
+                    content: "";
+                    border: 1px solid #666;
+                }
+            }
+    
+            .platform-info {
+
+                //White close button
+                button.close-platform {
+					color: #FFF;
+                }
+
+                .platform-select-choose-platform {
+					p:first-of-type {
+						.heading-xs();
+                        margin-bottom: 2px;
+                    }
+                }
+    
+                .custom-footer-link {
+    
+                    //Game Pass Logo
+                    .custom-main-cta-label {
+                        background: url(../images/game_pass.svg) center center no-repeat;
+                        background-size: contain;
+                        width: 116px;
+                        height: 20px;
+                        text-indent: 102%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        display: block;
+                        letter-spacing: 0;
+                        filter: brightness(0) invert(1);
+                    }
+
+                    a {
+						padding: 14px 12px;
+                    }
+    
+                }
+    
+            }
+    
+        }
+    
+    }*/
+}
+#bo6-cards-container .cod-play-now-card:hover .cod-play-now-card-inner-container {
+  box-shadow: 0px 0px 20px 5px rgba(249, 104, 0, 0.7);
+}
+#bo6-cards-container .cod-play-now-card:hover .cod-play-now-card_front .cod-play-now-card_cover {
+  overflow: hidden;
+}
+#bo6-cards-container .cod-play-now-card:hover .cod-play-now-card_front .cod-play-now-card_cover video,
+#bo6-cards-container .cod-play-now-card:hover .cod-play-now-card_front .cod-play-now-card_cover img {
+  scale: 1.05;
+}
+@media screen and (max-width: 600px) {
+  #bo6-cards-container .cod-play-now-card:hover .cod-play-now-card-inner-container {
+    box-shadow: unset;
+  }
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_bundle-name {
+  margin: 12px 16px;
+  position: absolute;
+  top: 0;
+  width: calc(100% - 32px);
+  z-index: 3;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_front .cod-play-now-card_cover {
+  overflow: hidden;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_front .cod-play-now-card_cover video,
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_front .cod-play-now-card_cover img {
+  transition: .25s all;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_front .cod-play-now-card_info {
+  padding-top: 10px;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_front .cod-play-now-card_platforms ul {
+  margin-bottom: 10px;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_front .cod-play-now-card_bundle-description {
+  padding-bottom: 18px;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_front .cod-play-now-card_bundle-description li {
+  position: relative;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_front .cod-play-now-card_bundle-description li:before {
+  background: #f96800;
+  top: 10px;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_front .cod-play-now-card_bundle-description li:after {
+  border: 1px solid #f96800;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_front .cod-play-now-card_select {
+  margin-bottom: 5px;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_back .cod-play-now-card_bundle-name {
+  position: relative;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_back .close-platform {
+  z-index: 10;
+  background: none;
+  top: 17px;
+  right: 25px;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_back .close-platform:after {
+  content: "Ã—";
+  font-size: 29px;
+  width: auto;
+  line-height: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_back .cod-play-now-card_back-section-1-content {
+  margin-top: 15px;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_back .cod-play-now-card_back-section-2-header {
+  padding-top: 12px;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_back .cod-play-now-card_back-section-2-header[aria-expanded='false'] {
+  padding-bottom: 12px;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_back .cod-play-now-card_back-section-2-subheader {
+  margin-top: 12px;
+}
+#bo6-cards-container .cod-play-now-card .cod-play-now-card_back .cod-play-now-card_back-section-2-content {
+  margin-top: 12px;
+}
+#bo6-cards-container .cod-play-now-card #bo6-vault-card .cod-play-now-card-inner-container {
+  border: 1px solid #f96800;
+}
+#bo6-cards-container .cod-play-now-card #bo6-vault-card .cod-play-now-card_bundle-name {
+  background: url("../images/VE_SkuBar_Orange.webp") center center no-repeat;
+  background-size: 100% 100%;
+  padding: 6px 24px;
+}
+#bo6-cards-container .cod-play-now-card #bo6-vault-card .cod-play-now-card_bundle-name p {
+  font-family: "Hitmarker Condensed Black", Arial;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  color: #000;
+}
+#bo6-cards-container .cod-play-now-card #bo6-vault-card .cod-play-now-card_front .cod-play-now-card_bundle-description li {
+  position: relative;
+}
+#bo6-cards-container .cod-play-now-card #bo6-vault-card .cod-play-now-card_front .cod-play-now-card_bundle-description li:before {
+  background: #f96800;
+  top: 10px;
+}
+#bo6-cards-container .cod-play-now-card #bo6-vault-card .cod-play-now-card_front .cod-play-now-card_bundle-description li:after {
+  border: 1px solid #f96800;
+}
+#bo6-cards-container .cod-play-now-card #bo6-vault-card .cod-play-now-card_front .cod-play-now-card_select button {
+  font-family: "Hitmarker Text Bold";
+  font-weight: 700;
+  font-style: normal;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 2px;
+  line-height: 1;
+  padding: 0;
+  background: #f96800;
+  color: #ffffff;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  letter-spacing: .8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+#bo6-cards-container .cod-play-now-card #bo6-vault-card .cod-play-now-card_back .close-platform:after {
+  color: #000;
+}
+#bo6-cards-container .cod-play-now-card #bo6-xgen-card .cod-play-now-card_bundle-name {
+  background: url("../images/VE_SkuBar_Gray.webp") center center no-repeat;
+  background-size: 100% 100%;
+  padding: 6px 24px;
+}
+#bo6-cards-container .cod-play-now-card #bo6-xgen-card .cod-play-now-card_bundle-name p {
+  font-family: "Hitmarker Text Regular", Arial;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  line-height: 1;
+}
+#bo6-cards-container .cod-play-now-card #bo6-xgen-card .cod-play-now-card_front .cod-play-now-card_bundle-description li {
+  position: relative;
+}
+#bo6-cards-container .cod-play-now-card #bo6-xgen-card .cod-play-now-card_front .cod-play-now-card_bundle-description li:nth-child(n+2) {
+  text-decoration: line-through;
+  color: #666;
+}
+#bo6-cards-container .cod-play-now-card #bo6-xgen-card .cod-play-now-card_front .cod-play-now-card_bundle-description li:nth-child(n+2):before {
+  content: "";
+  background: #666;
+}
+#bo6-cards-container .cod-play-now-card #bo6-xgen-card .cod-play-now-card_front .cod-play-now-card_bundle-description li:nth-child(n+2):after {
+  content: "";
+  border: 1px solid #666;
+}
+#bo6-cards-container .cod-play-now-card #bo6-xgen-card .cod-play-now-card_front .cod-play-now-card_select button {
+  font-family: "Hitmarker Text Bold";
+  font-weight: 700;
+  font-style: normal;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 2px;
+  line-height: 1;
+  padding: 0;
+  border: #f96800 1px solid;
+  background: transparent;
+  color: #ffffff;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+  font-size: 1rem;
+  letter-spacing: .8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+#bo6-cards-container .cod-play-now-card #bo6-xgen-card .cod-play-now-card_back .close-platform:after {
+  color: #FFF;
+}
+#bo6-cards-container .cod-play-now-card #bo6-xgen-card .cod-play-now-card_back .cod-play-now-card_back-section-2-subheader sup {
+  vertical-align: super;
+  line-height: 1;
+  font-size: .5em;
+}
+#bo6-cards-container .cod-play-now-card #bo6-xgen-card .cod-play-now-card_back .cod-play-now-card_back-section-2-content a {
+  padding: 14px 12px;
+}
+#bo6-cards-container .cod-play-now-card #bo6-xgen-card .cod-play-now-card_back .cod-play-now-card_back-section-2-content a span {
+  background: url("../images/game_pass.svg") center center no-repeat;
+  background-size: contain;
+  width: 116px;
+  height: 20px;
+  text-indent: 102%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  letter-spacing: 0;
+  filter: brightness(0) invert(1);
+}
+html[lang='ar'] .bo6-subpage-playnow #bo6-cards-container .slick-prev {
+  rotate: 180deg;
+  left: auto;
+  right: -15px;
+}
+html[lang='ar'] .bo6-subpage-playnow #bo6-cards-container .slick-next {
+  rotate: 180deg;
+  right: auto;
+  left: -16px;
+}
+html[lang='en-AU'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='pt-BR'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='en-CA'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='da'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='fr'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='fi'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='de'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='it'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='ja'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='ko'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='es-MX'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='nl'] html[lang='en-NZ'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='pl'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='pt'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='es'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='sv'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='en-GB'] body#bo6-play-now .page-disclaimers p:nth-child(6),
+html[lang='en'] body#bo6-play-now .page-disclaimers p:nth-child(6) {
+  display: block;
+}
+html[lang='en-AU'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='pt-BR'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='en-CA'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='da'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='fr'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='fi'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='de'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='it'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='ja'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='ko'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='es-MX'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='nl'] html[lang='en-NZ'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='pl'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='pt'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='es'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='sv'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='en-GB'] body#bo6-play-now .page-disclaimers p:nth-child(7),
+html[lang='en'] body#bo6-play-now .page-disclaimers p:nth-child(7) {
+  display: none;
+}
+
+/**
+	COD BO6 GAME PASS BANNER
+*/
+.game-pass-banner {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 60px;
+  padding-inline: 40px;
+  max-width: 1320px;
+  width: 100%;
+  background: linear-gradient(0deg, #1b1b1b -0.06%, #3c4147 99.94%);
+  margin: 40px auto 40px;
+  position: relative;
+  display: none;
+}
+@media (max-width: 1024px) {
+  .game-pass-banner {
+    max-width: 1024px;
+    padding-inline: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .game-pass-banner {
+    max-width: 600px;
+    padding-inline: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .game-pass-banner {
+    margin: 0px auto 80px;
+  }
+}
+@media (max-width: 600px) {
+  .game-pass-banner {
+    margin: 0px auto 60px;
+  }
+}
+.game-pass-banner .atvi-card-inner-container {
+  max-width: 1440px;
+  margin-inline: auto;
+  padding-inline: 60px;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+@media (max-width: 1024px) {
+  .game-pass-banner .atvi-card-inner-container {
+    max-width: 1024px;
+    padding-inline: 40px;
+  }
+}
+@media (max-width: 600px) {
+  .game-pass-banner .atvi-card-inner-container {
+    max-width: 600px;
+    padding-inline: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .game-pass-banner .atvi-card-inner-container {
+    display: grid;
+    grid-gap: 28px;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .game-pass-banner .atvi-card-inner-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.game-pass-banner .atvi-card-inner-container .atvi-card-content-container {
+  grid-column: 2 / span 10;
+}
+@media (max-width: 1024px) {
+  .game-pass-banner .atvi-card-inner-container .atvi-card-content-container {
+    grid-column: 1 / span 12;
+  }
+}
+@media (max-width: 600px) {
+  .game-pass-banner .atvi-card-inner-container .atvi-card-content-container {
+    grid-column: 1 / span 4;
+  }
+}
+.game-pass-banner .atvi-card-media-container {
+  display: none;
+}
+.game-pass-banner .atvi-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 35px;
+  padding: 20px 0;
+}
+.game-pass-banner .atvi-card-content .atvi-card-logo {
+  max-width: 215px;
+}
+.game-pass-banner .atvi-card-content .atvi-card-logo img {
+  display: block;
+  filter: brightness(0) invert(1);
+  width: 100%;
+}
+.game-pass-banner .atvi-card-content .atvi-card-text {
+  max-width: 620px;
+}
+.game-pass-banner .atvi-card-content .atvi-card-text p {
+  font-family: "Hitmarker Text Regular", Arial;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #FFF;
+  text-align: center;
+}
+.game-pass-banner .atvi-card-content .atvi-card-text p sup {
+  vertical-align: super;
+  line-height: 0;
+  font-size: .5em;
+}
+.game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1) {
+  display: none;
+}
+.game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2) {
+  display: block;
+}
+.game-pass-banner .atvi-card-content .atvi-card-ctas a {
+  display: block;
+  font-family: "Hitmarker Text Regular", Arial;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 0.88rem;
+  line-height: 1.38rem;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: fit-content;
+  padding: 12px 24px;
+  border-radius: 2px;
+  background: #107C10;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  min-width: 120px;
+}
+@media (max-width: 600px) {
+  .game-pass-banner .atvi-card-content {
+    padding: 16px 0px;
+    margin: 0px auto;
+    gap: 12px;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+html[lang='en-AU'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='pt-BR'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='en-CA'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='da'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='fr'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='fi'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='de'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='it'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='ja'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='ko'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='es-MX'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='nl'] html[lang='en-NZ'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='pl'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='pt'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='es'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='sv'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='en-GB'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1),
+html[lang='en'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(1) {
+  display: block;
+}
+html[lang='en-AU'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='pt-BR'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='en-CA'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='da'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='fr'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='fi'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='de'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='it'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='ja'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='ko'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='es-MX'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='nl'] html[lang='en-NZ'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='pl'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='pt'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='es'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='sv'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='en-GB'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2),
+html[lang='en'] .game-pass-banner .atvi-card-content .atvi-card-text p:nth-child(2) {
+  display: none;
+}
+
+body .cod-play-now-card-container .cod-play-now-card_promo .on-sale-tag {
+  display: none;
+}
+body .cod-play-now-card-container .cod-play-now-card_promo .up-to-off-tag {
+  display: block;
+}
+body .cod-play-now-card-container ul.platform-console-links-list li .console-promo {
+  display: block;
+}
+body.test-a .cod-play-now-card-container .cod-play-now-card_promo .on-sale-tag {
+  display: block;
+}
+body.test-a .cod-play-now-card-container .cod-play-now-card_promo .up-to-off-tag {
+  display: none;
+}
+body.test-a .cod-play-now-card-container ul.platform-console-links-list li .console-promo {
+  display: none;
+}
+body.test-b .cod-play-now-card-container .cod-play-now-card_promo .on-sale-tag {
+  display: block;
+}
+body.test-b .cod-play-now-card-container .cod-play-now-card_promo .up-to-off-tag {
+  display: none;
+}
+body.test-b .cod-play-now-card-container ul.platform-console-links-list li .console-promo {
+  display: block;
+}

@@ -1,0 +1,91 @@
+.atvi-cta-container .modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  background: rgba(0, 0, 0, 0.8);
+}
+.atvi-cta-container .modal-overlay .inner-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.atvi-cta-container .modal-overlay .modal-close {
+  font-family: sans-serif;
+  font-size: 60px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  color: #FFF;
+  z-index: 5;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.atvi-cta-container .modal-overlay .modal-content {
+  position: absolute;
+  width: 65%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+}
+@media screen and (max-width: 768px) {
+  .atvi-cta-container .modal-overlay .modal-content {
+    width: 100%;
+  }
+}
+.atvi-cta-container .modal-overlay .modal-content .media-content {
+  position: relative;
+  padding-bottom: 56.25%;
+  z-index: 1;
+}
+.atvi-cta-container .modal-overlay .modal-content .media-content .modal-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: 0.25s all;
+  -moz-transition: 0.25s all;
+  -ms-transition: 0.25s all;
+  -o-transition: 0.25s all;
+  transition: 0.25s all;
+  z-index: 1;
+}
+.atvi-cta-container .modal-overlay .modal-content .media-content .modal-item.previous-slide {
+  opacity: 0;
+}
+.atvi-cta-container .modal-overlay .modal-content .media-content .modal-item.current {
+  opacity: 1;
+  z-index: 5;
+}
+.atvi-cta-container .modal-overlay .modal-content .media-content img {
+  width: 100%;
+  display: block;
+}
+.atvi-cta-container .modal-overlay .modal-content .media-content .player,
+.atvi-cta-container .modal-overlay .modal-content .media-content iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.atvi-cta-container .modal-age-gate,
+.atvi-cta-container .atvi-agegate {
+  z-index: 1;
+}
